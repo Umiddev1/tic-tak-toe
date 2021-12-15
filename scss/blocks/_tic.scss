@@ -1,0 +1,46 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tic__btns {
+  width: 500px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+.tic__btn {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  border: none;
+  margin-bottom: 18px;
+  border-radius: 10px;
+  background-color: #78bdc4;
+}
+.tic__round {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 45px;
+  color: #ccc;
+  display: none;
+  opacity: 0;
+}
+.tic__x {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 45px;
+  color: #ccc;
+  opacity: 0;
+}
+.tic__btn:hover {
+  background-color: #3A4250;
+}
+.tic__btn:hover .tic__x {
+  opacity: 1;
+}
